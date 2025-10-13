@@ -3,11 +3,11 @@
 
 # *Cтрахов Роман 25-ивт-2-1*
 
-## [Use-case диарамма](docs/diagrams/usecasediag.png)
+## [Use-case диарамма](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/usecasediag.png)
 
-## [Блок-схема сбора метрик](docs/diagrams/c6opmetrik.png)
+## [Блок-схема сбора метрик](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/c6opmetrik.png)
 
-## [Блок-схема процесса “Отчет ‘Топ N-треков’”](docs/diagrams/top_n_trek.png)
+## [Блок-схема процесса “Отчет ‘Топ N-треков’”](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/top_n_trek.png)
 
 ## [Таблица](docs/data-model.md)
 
