@@ -60,17 +60,23 @@ __В этой лабораторной работе проектируется �
 
 ## **Схема данных**:
 
-- Artist(id, name, url, genre, tags, created).​
+| Left-Aligned  | Center Aligned  | Right Aligned |
+|:------------- |:---------------:| -------------:|
+| Row 1         | **Bold**        | Cell 3        |
+| Row 2         | *Italic*        | Cell 6        |
+| Row 3         | ~~Strike~~      | Cell 9        |
+| Row 3         | [Link](dot.com) | Cell 9        |
+Artist(id, name, url, genre, tags, created).​
 
-- Track(id, artistId, title, url, release_date, genre, tags, active).​
+Track(id, artistId, title, url, release_date, genre, tags, active).​
 
-- Metric(id, trackId, ts, listens, likes, reposts, comments, source).​
+Metric(id, trackId, ts, listens, likes, reposts, comments, source).​
 
-- DailyAggregate(id, trackId, date, listens_sum, likes_sum, reposts_sum, comments_sum, engagement_rate).​
+DailyAggregate(id, trackId, date, listens_sum, likes_sum, reposts_sum, comments_sum, engagement_rate).​
 
-- JobRun(id, job_name, started_at, finished_at, status, error_num).​
+JobRun(id, job_name, started_at, finished_at, status, error_num).​
 
-- User(id, login, role, email, active).
+User(id, login, role, email, active).
 
 ## **Технологии и иструменты**:
 
