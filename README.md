@@ -3,11 +3,11 @@
 
 # *Cтрахов Роман 25-ивт-2-1*
 
-## [Use-case диарамма](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/c6op_Metrik.png)
+## [Use-case диарамма](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/diagusecase.png)
 
-## [Блок-схема сбора метрик]()
+## [Блок-схема сбора метрик](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/c6op_Metrik.png)
 
-## [Блок-схема процесса “Отчет ‘Топ N-треков’”]()
+## [Блок-схема процесса “Отчет ‘Топ N-треков’”](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/ot4et_top_n_trekov.png)
 
 __В этой лабораторной работе проектируется ИС, которая собирает и анализирует метрики прослушиваний треков рэп артистов на SoundCloud, чтобы быстро видеть динамику, сравнивать релизы и готовить отчёты.__
 
