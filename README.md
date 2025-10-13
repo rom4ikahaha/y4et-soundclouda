@@ -17,91 +17,91 @@ Cтрахов Роман 25-ивт-2-1
 
 Пользователи и роли:
 
-•	Администратор: ведёт справочники артистов и треков, настраивает расписание сбора, управляет пользователями/ролями, словарями жанров/тегов.
+	•	Администратор: ведёт справочники артистов и треков, настраивает расписание сбора, управляет пользователями/ролями, словарями жанров/тегов.
 
-•	Аналитик/Менеджер: смотрит дашборды, формирует отчёты, сравнивает треки/артистов, настраивает фильтры и экспорт.
+	•	Аналитик/Менеджер: смотрит дашборды, формирует отчёты, сравнивает треки/артистов, настраивает фильтры и экспорт.
 
 Основные функции:
 
-•	Регистрация артистов и треков с валидацией ссылок SoundCloud.
+	•	Регистрация артистов и треков с валидацией ссылок SoundCloud.
 
-•	Плановый сбор метрик по расписанию, хранение фактов и пересчёт суточных агрегатов.
+	•	Плановый сбор метрик по расписанию, хранение фактов и пересчёт суточных агрегатов.
 
-•	Отчёты: топ N, сравнения, приросты, коэффициент вовлечённости, фильтры по периодам/жанрам/артистам, экспорт CSV/XLSX/PNG.
+	•	Отчёты: топ N, сравнения, приросты, коэффициент вовлечённости, фильтры по периодам/жанрам/артистам, экспорт CSV/XLSX/PNG.
 
-•	Уведомления о всплесках и аномалиях.
+	•	Уведомления о всплесках и аномалиях.
 
 Требования и ограничения: уникальность ссылок треков; целостность связей; индексы по времени и идентификаторам; в рамках лабораторной допускается работа на тестовых данных без реальных интеграций, с имитацией источника.
 
 Архитектура:
 
-•	Базовая схема: трёхслойная архитектура с отдельными фоновыми задачами (ETL)
+	•	Базовая схема: трёхслойная архитектура с отдельными фоновыми задачами (ETL)
 
-•	Presentation (Web UI): интерфейс аналитика для дашбордов, топ N, сравнений, экспорта.
+	•	Presentation (Web UI): интерфейс аналитика для дашбордов, топ N, сравнений, экспорта.
 
-•	Business Logic (API): агрегирующие запросы, расчёт метрик, валидация, RBAC.
+	•	Business Logic (API): агрегирующие запросы, расчёт метрик, валидация, RBAC.
 
-•	Data/Repository: реляционная БД для справочников, фактов и суточных агрегатов.
+	•	Data/Repository: реляционная БД для справочников, фактов и суточных агрегатов.
 
-•	ETL по расписанию: инкрементальная загрузка метрик, нормализация, пересчёт агрегатов, аудит JobRun
+	•	ETL по расписанию: инкрементальная загрузка метрик, нормализация, пересчёт агрегатов, аудит JobRun
 
 Компоненты системы: 
 
-•	Веб клиент аналитика: страницы “Дашборд”, “Топ N”, “Сравнение”, “Отчёты”, формы экспорта CSV/XLSX/PNG, фильтры по периоду/артистам/жанрам; авторизация по ролям.
+	•	Веб клиент аналитика: страницы “Дашборд”, “Топ N”, “Сравнение”, “Отчёты”, формы экспорта CSV/XLSX/PNG, фильтры по периоду/артистам/жанрам; авторизация по ролям.
 
-•	Backend API: REST/GraphQL эндпоинты для агрегатов и сравнений, сервис отчётов, модуль уведомлений, эндпоинты статусов ETL и ручного перезапуска задач (для демонстрации).
+	•	Backend API: REST/GraphQL эндпоинты для агрегатов и сравнений, сервис отчётов, модуль уведомлений, эндпоинты статусов ETL и ручного перезапуска задач (для демонстрации).
 
-•	ETL сервис: периодический сбор метрик (имитация или реальный HTTP клиент), запись в MetricFact, пересчёт DailyAggregate, логирование в JobRun, обработка ретраев и throttling.
+	•	ETL сервис: периодический сбор метрик (имитация или реальный HTTP клиент), запись в MetricFact, пересчёт DailyAggregate, логирование в JobRun, обработка ретраев и throttling.
 
-•	Хранилище данных: PostgreSQL со схемой Artist, Track, MetricFact, DailyAggregate, JobRun, User; уникальности и индексы по времени/идентификаторам.
+	•	Хранилище данных: PostgreSQL со схемой Artist, Track, MetricFact, DailyAggregate, JobRun, User; уникальности и индексы по времени/идентификаторам.
 
 Схема данных:
 
-Artist(id, name, url, genre, tags, created).​
+	Artist(id, name, url, genre, tags, created).​
 
-Track(id, artistId, title, url, release_date, genre, tags, active).​
+	Track(id, artistId, title, url, release_date, genre, tags, active).​
 
-Metric(id, trackId, ts, listens, likes, reposts, comments, source).​
+	Metric(id, trackId, ts, listens, likes, reposts, comments, source).​
 
-DailyAggregate(id, trackId, date, listens_sum, likes_sum, reposts_sum, comments_sum, engagement_rate).​
+	DailyAggregate(id, trackId, date, listens_sum, likes_sum, reposts_sum, comments_sum, engagement_rate).​
 
-JobRun(id, job_name, started_at, finished_at, status, error_num).​
+	JobRun(id, job_name, started_at, finished_at, status, error_num).​
 
-User(id, login, role, email, active).
+	User(id, login, role, email, active).
 
 Технологии и иструменты:
 
-•	Backend: Python/FastAPI (pydantic, uvicorn) или Node.js/NestJS (TypeScript, class validator).
+	•	Backend: Python/FastAPI (pydantic, uvicorn) или Node.js/NestJS (TypeScript, class validator).
 
-•	Frontend: React/Vite + Chart.js/ECharts либо Vue/Vite + ApexCharts; таблицы — AG Grid/Material.
+	•	Frontend: React/Vite + Chart.js/ECharts либо Vue/Vite + ApexCharts; таблицы — AG Grid/Material.
 
-•	БД: PostgreSQL; миграции — Alembic (Python) или Prisma/TypeORM (Node).
+	•	БД: PostgreSQL; миграции — Alembic (Python) или Prisma/TypeORM (Node).
 
-•	ETL: cron/systemd timer для учебного прототипа; для расширения — Apache Airflow (docker compose).
+	•	ETL: cron/systemd timer для учебного прототипа; для расширения — Apache Airflow (docker compose).
 
-•	Экспорт: CSV/XLSX/PNG; логирование — структурированные JSON логи, хранение JobRun в БД.
+	•	Экспорт: CSV/XLSX/PNG; логирование — структурированные JSON логи, хранение JobRun в БД.
 
 Примеры API
 
-•	GET /dashboard?artistId&from&to — агрегаты для дашборда.
+	•	GET /dashboard?artistId&from&to — агрегаты для дашборда.
 
-•	GET /top?metric=listens|er&n=&from=&to= — топ N треков.
+	•	GET /top?metric=listens|er&n=&from=&to= — топ N треков.
 
-•	GET /compare?entity=track|artist&ids=&metric=&from=&to= — сравнение.
+	•	GET /compare?entity=track|artist&ids=&metric=&from=&to= — сравнение.
 
-•	POST /alerts — настройки уведомлений; GET /etl/status, POST /etl/run — сервисные операции.
+	•	POST /alerts — настройки уведомлений; GET /etl/status, POST /etl/run — сервисные операции.
 
 План реализации
 
-•	Этап 1: Справочники Artist/Track, CRUD, валидация URL; БД и миграции.
+	•	Этап 1: Справочники Artist/Track, CRUD, валидация URL; БД и миграции.
 
-•	Этап 2: Таблицы MetricFact/DailyAggregate, индексы и уникальные ключи; генерация тестовых данных/имитация загрузки.
+	•	Этап 2: Таблицы MetricFact/DailyAggregate, индексы и уникальные ключи; генерация тестовых данных/имитация загрузки.
 
-•	Этап 3: ETL скрипт по расписанию, ретраи, throttling, журнал JobRun.
+	•	Этап 3: ETL скрипт по расписанию, ретраи, throttling, журнал JobRun.
 
-•	Этап 4: Дашборды, отчёты Top N и сравнения; экспорт CSV/XLSX/PNG.
+	•	Этап 4: Дашборды, отчёты Top N и сравнения; экспорт CSV/XLSX/PNG.
 
-•	Этап 5: Уведомления (пороговые правила), RBAC (Admin/Analyst), подготовка презентации
+	•	Этап 5: Уведомления (пороговые правила), RBAC (Admin/Analyst), подготовка презентации
 
 
 
