@@ -3,11 +3,11 @@
 
 # *Cтрахов Роман 25-ивт-2-1*
 
-## [Use-case диарамма](docs/diagrams/usecase.puml)
+## [Use-case диарамма](docs/diagrams/usecasediag.png)
 
-## [Блок-схема сбора метрик](docs/diagrams/c6op_metrik.puml)
+## [Блок-схема сбора метрик](docs/diagrams/c6opmetrik.png)
 
-## [Блок-схема процесса “Отчет ‘Топ N-треков’”](docs/diagrams/top_n_trek.puml)
+## [Блок-схема процесса “Отчет ‘Топ N-треков’”](docs/diagrams/top_n_trek.png)
 
 ## [Таблица](docs/data-model.md)
 
