@@ -6,42 +6,16 @@
 
 ## **1:**
 
-git commit
-
-git commit
+Коммиты
 
 ## **2:**
 
-git branch bugFix
-
-git checkout bugFix
+переключение на новую ветку
 
 ## **3:**
 
-git branch bugFix
-
-git checkout bugFix
-
-git commit 
-
-git checkout main
-
-git commit 
-
-git merge bugFix
+объединение двух веток
 
 ## **4:**
 
-git branch bugFix
-
-git checkout bugFix
-
-git commit 
-
-git checkout main
-
-git commit 
-
-git checkout bugFix
-
-git rebase main
+объединение изменений в двух ветках
