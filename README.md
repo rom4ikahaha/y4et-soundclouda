@@ -3,7 +3,7 @@
 
 # *Cтрахов Роман 25-ивт-2-1*
 
-## [Use-case диарамма]()
+## [Use-case диарамма](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/c6op_Metrik.png)
 
 ## [Блок-схема сбора метрик]()
 
