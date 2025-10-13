@@ -60,14 +60,14 @@ __В этой лабораторной работе проектируется �
 
 ## **Схема данных**:
 
-| Left-Aligned  | Center Aligned  | Right Aligned |
-|:------------- |:---------------:| :-------------:|
-| Artist         | id        | name      |
-| Track         | id         | artistId        |
-| Metric         | id        | trackId        |
-| DailyAggregate  | id | trackId       |
-| JobRun         | id     | job_name       |
-| User         | id       | login       |
+| <!-- -->      | <!-- -->        | <!-- -->      | <!-- -->      | 
+|:------------- |:---------------:| :-------------:| :-------------:|
+| Artist         | id        | name      |    | 
+| Track         | id         | artistId        |   |  
+| Metric         | id        | trackId        |    | 
+| DailyAggregate  | id | trackId       |    |  
+| JobRun         | id     | job_name       |   | 
+| User         | id       | login       |   | 
 
 Artist(id, name, url, genre, tags, created).​
 
