@@ -62,10 +62,13 @@ __В этой лабораторной работе проектируется �
 
 | Left-Aligned  | Center Aligned  | Right Aligned |
 |:------------- |:---------------:| -------------:|
-| Row 1         | **Bold**        | Cell 3        |
-| Row 2         | *Italic*        | Cell 6        |
-| Row 3         | ~~Strike~~      | Cell 9        |
-| Row 3         | [Link](dot.com) | Cell 9        |
+| Artist         | **Bold**        | Cell 3        |
+| Track         | *Italic*        | Cell 6        |
+| Metric         | ~~Strike~~      | Cell 9        |
+| DailyAggregate  | [Link](dot.com) | Cell 9        |
+| JobRun  | [Link](dot.com) | Cell 9        |
+| User  | [Link](dot.com) | Cell 9        |
+
 Artist(id, name, url, genre, tags, created).​
 
 Track(id, artistId, title, url, release_date, genre, tags, active).​
