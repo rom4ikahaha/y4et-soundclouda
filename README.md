@@ -5,11 +5,11 @@
 
 ## [Use-case диарамма](docs/diagrams/usecase.puml)
 
-## [Блок-схема сбора метрик](docs/diagrams/topN_flow.puml)
+## [Блок-схема сбора метрик](docs/diagrams/c6op_metrik.puml)
 
-## [Блок-схема процесса “Отчет ‘Топ N-треков’”](docs/diagrams/top_n_treka.puml)
+## [Блок-схема процесса “Отчет ‘Топ N-треков’”](docs/diagrams/top_n_trek.puml)
 
-## [Таблица](docs/diagrams/topN_flow.puml)
+## [Таблица](docs/data-model.md)
 
 __В этой лабораторной работе проектируется ИС, которая собирает и анализирует метрики прослушиваний треков рэп артистов на SoundCloud, чтобы быстро видеть динамику, сравнивать релизы и готовить отчёты.__
 
