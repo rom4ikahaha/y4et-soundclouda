@@ -1,8 +1,8 @@
 # Введение
 
-[первое фото](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/report_o_igre/foto/dokbo1.png)
+[первое фото](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/report_o_igre/foto/dokBo1.png)
 
-[второе](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/report_o_igre/foto/dokbo2.png)
+[второе](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/report_o_igre/foto/dokBo2.png)
 
 **Научился делать коммиты, ветвлению, объединению двух разных веток**
 
