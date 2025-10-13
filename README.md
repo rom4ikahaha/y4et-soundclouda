@@ -64,7 +64,7 @@ __В этой лабораторной работе проектируется �
 |:------------- |:---------------:| :-------------:| :-------------:|  :-------------:| :-------------:| :-------------:| :-------------:| :-------------:|
 | Artist         | id        | name      |  url  |  genre |  tags |  created | 
 | Track         | id         | artistId        | title  | url |  release_date  | genre |  tags | active |
-| Metric         | id        | trackId        |    | 
+| Metric         | id        | trackId        |  ts  |  listens |  likes | reposts | comments | source |
 | DailyAggregate  | id | trackId       |    |  
 | JobRun         | id     | job_name       |   | 
 | User         | id       | login       |   | 
