@@ -9,7 +9,7 @@
 
 ## [Блок-схема процесса “Отчет ‘Топ N-треков’”](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/ot4et_top_n_trekov.png)
 
-## [Таблица]()
+## [Таблица](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/tablica.png)
 
 __В этой лабораторной работе проектируется ИС, которая собирает и анализирует метрики прослушиваний треков рэп артистов на SoundCloud, чтобы быстро видеть динамику, сравнивать релизы и готовить отчёты.__
 
