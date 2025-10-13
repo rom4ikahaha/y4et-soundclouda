@@ -38,4 +38,4 @@ Analyst --> UC6
 
 UC7 ..> UC2 : <<includes>>
 
-@enduml.
+@enduml
