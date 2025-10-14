@@ -5,6 +5,8 @@
 
 ## [Use-case диарамма](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/usecasediag.png)
 
+![](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/usecasediag.png)
+
 ## [Блок-схема сбора метрик](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/c6opmetrik.png)
 
 ## [Блок-схема процесса “Отчет ‘Топ N-треков’”](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/top_n_trek.png)
