@@ -91,13 +91,13 @@ User(id, login, role).
 
 ## **Технологии и иструменты**:
 
-- **Backend**: Python/FastAPI (pydantic, uvicorn) или Node.js/NestJS (TypeScript, class validator).
+- **Backend**: Python или Node.js.
 
-- **Frontend**: React/Vite + Chart.js/ECharts либо Vue/Vite + ApexCharts; таблицы — AG Grid/Material.
+- **Frontend**: React + ECharts; таблицы — AG Grid.
 
-- **БД**: PostgreSQL; миграции — Alembic (Python) или Prisma/TypeORM (Node).
+- **БД**: PostgreSQL; миграции — Python или Node.
 
-- **ETL**: cron/systemd timer для учебного прототипа; для расширения — Apache Airflow (docker compose).
+- **ETL**: cron/systemd timer.
 
 - **Экспорт**: CSV/XLSX/PNG; логирование — структурированные JSON логи, хранение JobRun в БД.
 
