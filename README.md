@@ -105,15 +105,6 @@ User(id, login, role, email, active).
 
 - **Экспорт**: CSV/XLSX/PNG; логирование — структурированные JSON логи, хранение JobRun в БД.
 
-## **Примеры API**
-
-- *GET /dashboard?artistId&from&to — агрегаты для дашборда.*
-
-- *GET /top?metric=listens|er&n=&from=&to= — топ N треков.*
-
-- *GET /compare?entity=track|artist&ids=&metric=&from=&to= — сравнение.*
-
-- *POST /alerts — настройки уведомлений; GET /etl/status, POST /etl/run — сервисные операции.*
 
 ## **План реализации**
 
