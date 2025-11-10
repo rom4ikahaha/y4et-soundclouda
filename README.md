@@ -17,6 +17,26 @@
 
 ![](docs/digrams/erdiagramma.jpg)
 
+## [Таблица админ](docs/digrams/admin.jpg)
+
+## [Таблица лайк](docs/digrams/like.jpg)
+
+## [Таблица репер](docs/digrams/raper.jpg)
+
+## [Таблица трек](docs/digrams/track.jpg)
+
+## [Таблица слушатель](docs/digrams/listener.jpg)
+
+## [Форма админ](docs/digrams/adminform.jpg)
+
+## [Форма лайк](docs/digrams/likeform.jpg)
+
+## [Форма репер](docs/digrams/raperform.jpg)
+
+## [Форма трек](docs/digrams/trackform.jpg)
+
+## [Форма слушатель](docs/digrams/listenerform.jpg)
+
 __В этой лабораторной работе проектируется ИС, которая собирает и анализирует метрики прослушиваний треков рэп артистов на SoundCloud, чтобы быстро видеть динамику, сравнивать релизы и готовить отчёты.__
 
 ## **Предметная область**: 
