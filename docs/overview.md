@@ -57,35 +57,24 @@ __В этой лабораторной работе проектируется �
 
 | <!-- -->      | <!-- -->        | <!-- -->      | <!-- -->      | <!-- -->      | <!-- -->      | <!-- -->      | <!-- -->      |  <!-- -->      | 
 |:------------- |:---------------:| :-------------:| :-------------:|  :-------------:| :-------------:| :-------------:| :-------------:| :-------------:|
-| Artist         | id        | name      |  url  |  genre |  tags |  created | 
-| Track         | id         | artistId        | title  | url |  release_date  | genre |  tags | active |
-| Metric         | id        | trackId        |  ts  |  listens |  likes | reposts | comments | source |
-| DailyAggregate  | id | trackId       |  date  |  listens_sum | likes_sum  | reposts_sum | comments_sum | engagement_rate |
-| JobRun         | id     | job_name       | started_at  |  finished_at | status | error_num | 
-| User         | id       | login       | role  | email | active |
+| Artist         | id        | name      |  url  |  
+| Track         | id         | artistId        | title   |  release_date | 
+| Metric         | id         | trackId        | ts  |  listens |  likes |
+| User         | id       | login       | role  | 
 
 
 ## **Технологии и иструменты**:
 
-- **Backend**: Python/FastAPI (pydantic, uvicorn) или Node.js/NestJS (TypeScript, class validator).
+- **Backend**: Python или Node.js.
 
-- **Frontend**: React/Vite + Chart.js/ECharts либо Vue/Vite + ApexCharts; таблицы — AG Grid/Material.
+- **Frontend**: React + ECharts; таблицы — AG Grid.
 
-- **БД**: PostgreSQL; миграции — Alembic (Python) или Prisma/TypeORM (Node).
+- **БД**: PostgreSQL; миграции — Python или Node.
 
-- **ETL**: cron/systemd timer для учебного прототипа; для расширения — Apache Airflow (docker compose).
+- **ETL**: cron/systemd timer.
 
 - **Экспорт**: CSV/XLSX/PNG; логирование — структурированные JSON логи, хранение JobRun в БД.
 
-## **Примеры API**
-
-- *GET /dashboard?artistId&from&to — агрегаты для дашборда.*
-
-- *GET /top?metric=listens|er&n=&from=&to= — топ N треков.*
-
-- *GET /compare?entity=track|artist&ids=&metric=&from=&to= — сравнение.*
-
-- *POST /alerts — настройки уведомлений; GET /etl/status, POST /etl/run — сервисные операции.*
 
 ## **План реализации**
 
