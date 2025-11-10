@@ -15,6 +15,8 @@
 
 ## [Overview](docs/overview.md)
 
+![](https://github.com/rom4ikahaha/y4et-soundclouda/blob/main/docs/digrams/erdiagramma.png)
+
 __В этой лабораторной работе проектируется ИС, которая собирает и анализирует метрики прослушиваний треков рэп артистов на SoundCloud, чтобы быстро видеть динамику, сравнивать релизы и готовить отчёты.__
 
 ## **Предметная область**: 
