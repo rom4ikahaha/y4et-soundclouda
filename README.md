@@ -79,17 +79,13 @@ __В этой лабораторной работе проектируется �
 | Metric         | id         | trackId        | ts  |  listens |  likes |
 | User         | id       | login       | role  | 
 
-Artist(id, name, url, genre, tags, created).​
+Artist(id, name, url).​
 
-Track(id, artistId, title, url, release_date, genre, tags, active).​
+Track(id, artistId, title,release_date).​
 
-Metric(id, trackId, ts, listens, likes, reposts, comments, source).​
+Metric(id, trackId, ts, listens, likes).​
 
-DailyAggregate(id, trackId, date, listens_sum, likes_sum, reposts_sum, comments_sum, engagement_rate).​
-
-JobRun(id, job_name, started_at, finished_at, status, error_num).​
-
-User(id, login, role, email, active).
+User(id, login, role).
 
 ## **Технологии и иструменты**:
 
