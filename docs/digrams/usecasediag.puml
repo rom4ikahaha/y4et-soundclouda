@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor репер as Artist
+actor слушатель as Listener
+actor Админ as Administrator
+
+package "soundcloud учёт" {
+    usecase "добавить трек" as UC_AddTrack
+    usecase "прослушать трек" as UC_PlayTrack
+    usecase "поставить лайк" as UC_LikeTrack
+    usecase "проанализировать лайки" as UC_AnalyzeLikes
+    usecase "экспортировать отчет" as UC_ExportReport
+}
+
+Artist --> UC_AddTrack
+
+Listener --> UC_PlayTrack
+Listener --> UC_LikeTrack
+
+Administrator --> UC_AnalyzeLikes
+Administrator --> UC_ExportReport
+
+@enduml
